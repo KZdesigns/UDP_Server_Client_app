@@ -1,5 +1,5 @@
 public class Request {
-    
+    // Define the fields of the Request class
     public int TML;
     public int opCode;
     public int operand1;
@@ -7,7 +7,7 @@ public class Request {
     public short requestID;
     public int opNameLength;
     public String opName;
-
+    // Define the constructor of the Request class
     public Request(int TML, int opCode, int operand1, int operand2, short requestID, int opNameLength, String opName) {
         this.TML = TML;
         this.opCode = opCode;
@@ -17,7 +17,7 @@ public class Request {
         this.opNameLength = opNameLength;
         this.opName = opName;
     }
-
+    // Define the toString method of the Request class
     public String toString() {
         String value = "TML: " + TML + "\n" +
                 "opCode: " + opCode + "\n" +

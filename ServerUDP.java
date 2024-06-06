@@ -16,9 +16,10 @@ public class ServerUDP {
         while (true) {
             sock.receive(packet);
 
-            // Decode the request
+            // initialize the decoder
             RequestDecoder requestDecoder = new RequestDecoder();
 
+            // Decode the request
             byte[] requestData = Arrays.copyOf(packet.getData(), packet.getLength());
             Request request = requestDecoder.decode(requestData);
 
