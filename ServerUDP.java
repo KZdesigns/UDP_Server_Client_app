@@ -64,7 +64,7 @@ public class ServerUDP {
             System.out.println();
         }
     }
-
+    // Perform the requested operation
     private static int performOperation(int opCode, int operand1, int operand2) {
         switch (opCode) {
             case 0:
